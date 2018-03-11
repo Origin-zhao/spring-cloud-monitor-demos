@@ -47,6 +47,17 @@
 			<artifactId>spring-boot-admin-server-ui-hystrix</artifactId>
 		</dependency>
 
+		<!--登录支持-->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-server-ui-login</artifactId>
+		</dependency>
+		<!--安全验证框架-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
