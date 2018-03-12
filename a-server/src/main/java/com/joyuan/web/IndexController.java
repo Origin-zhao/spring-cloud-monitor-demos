@@ -7,13 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @HystrixCommand(fallbackMethod = "error")
     @RequestMapping("/index1")
     public String index1(){
         return "index1";
     }
 
-    @HystrixCommand(fallbackMethod = "error")
     @RequestMapping("/index2")
     public String index2(){
         try {
@@ -22,9 +20,5 @@ public class IndexController {
             e.printStackTrace();
         }
         return "index2";
-    }
-
-    private String error(){
-        return "error";
     }
 }
